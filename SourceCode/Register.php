@@ -17,6 +17,7 @@ function validatetxtUser(){
 	document.getElementById("p1").style.visibility="visible";
 		return false;
 	}
+	else document.getElementById("p1").style.visibility="hidden";
 }
 
 function validatetxtPass(){
@@ -25,6 +26,7 @@ function validatetxtPass(){
 	document.getElementById("p2").style.visibility="visible";
 		return false;
 	}
+	else document.getElementById("p2").style.visibility="hidden";
 }
 
 function validatetxtRePass(){
@@ -34,6 +36,7 @@ function validatetxtRePass(){
 		document.getElementById("p3").style.visibility="visible";
 		return false;
 	}
+	else document.getElementById("p3").style.visibility="hidden";
 }
 
 function validatetxtName(){
@@ -42,6 +45,7 @@ function validatetxtName(){
 		document.getElementById("p5").style.visibility="visible";
 		return false;
 	}
+	else document.getElementById("p5").style.visibility="hidden";
 }
 
 function validatetxtAdd(){
@@ -50,14 +54,16 @@ function validatetxtAdd(){
 		document.getElementById("p6").style.visibility="visible";
 		return false;
 	}
+	else document.getElementById("p6").style.visibility="hidden";
 }
 
 function validatetxtPhone(){
 	var x=document.forms['frmRegister']['txtPhone'].value;
-	if (x==null || x=="" || isNaN(x)==false){
+	if (x==null || x=="" || isNaN(x)==true){
 		document.getElementById("p7").style.visibility="visible";
 		return false;
 	}
+	else document.getElementById("p7").style.visibility="hidden";
 }
 
 function validatetxtEmail(){
@@ -67,6 +73,7 @@ function validatetxtEmail(){
 		document.getElementById("p4").style.visibility="visible";
 		return false;
 	}
+	else document.getElementById("p4").style.visibility="hidden";
 }
 </script>
 </head>
@@ -130,7 +137,7 @@ function validatetxtEmail(){
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="checkbox" name="cbAgree" value="checkbox" />
     <label for="txtPass"> Tôi đã đọc và chấp nhận các điều khoản của Website </label></td></tr>
     <tr>
