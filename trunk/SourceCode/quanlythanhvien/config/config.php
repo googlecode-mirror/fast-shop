@@ -8,7 +8,7 @@
 <body>
 <?php
 	$conn = mysql_connect("localhost", "root", "") or die ("Không kết nối đc CSDL!");
-	mysql_select_db("shop",$conn) or mysql_error("Không tồn tại bảng này trong CSDL!");
+	mysql_select_db("FastShop",$conn) or mysql_error("Không tồn tại bảng này trong CSDL!");
 ?>
 </body>
 </html>
